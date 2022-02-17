@@ -1,4 +1,4 @@
-// import models
+// import models(Linking Different Files Together)
 const Product = require('./Product');
 const Category = require('./Category');
 const Tag = require('./Tag-Route');
@@ -26,6 +26,7 @@ Tag.belongsToMany(Product, {
   foreignKey: 'tag_id'
 });
 
+//Module Exports Linking to Everything Mentioned In Above Code
 module.exports = {
   Product,
   Category,
